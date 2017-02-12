@@ -9,7 +9,7 @@ export class LessonsService {
     constructor() {
         this.loadLessons();
     }
-
+        
     loadLessons() {
         this.lessons = lessonsData;
     }
@@ -47,5 +47,6 @@ export class LessonsService {
     //            err => console.error(err)
     //        );
     //}
-    
+
+
 }
