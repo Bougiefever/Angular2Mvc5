@@ -5,6 +5,7 @@
   <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
+    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>
@@ -144,7 +145,6 @@
     <Content Include="app\directives2\heroes.html" />
     <Content Include="app\directives2\lesson.css" />
     <Content Include="app\services-intro\app.component.html" />
-    <Content Include="Content\directives-intro.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\common.css" />
@@ -184,11 +184,12 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="typings.json" />
-    <Content Include="typings\globals\core-js\typings.json" />
+    <Content Include="tsconfig.json" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="typings\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -218,12 +219,11 @@
     <TypeScriptCompile Include="app\main.ts" />
     <TypeScriptCompile Include="app\services-intro\app.component.ts" />
     <TypeScriptCompile Include="app\services-intro\app.module.ts" />
+    <TypeScriptCompile Include="app\services-intro\init-observable.ts" />
     <TypeScriptCompile Include="app\services-intro\lessons-list.component.ts" />
     <TypeScriptCompile Include="app\services-intro\lessons.service.ts" />
     <TypeScriptCompile Include="app\services-intro\lessons.ts" />
     <TypeScriptCompile Include="app\services-intro\xhr-headers.ts" />
-    <TypeScriptCompile Include="typings\globals\core-js\index.d.ts" />
-    <TypeScriptCompile Include="typings\index.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

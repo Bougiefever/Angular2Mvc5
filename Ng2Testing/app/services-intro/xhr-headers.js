@@ -7,4 +7,5 @@ function xhrHeaders() {
     return { headers: headers };
 }
 exports.xhrHeaders = xhrHeaders;
+
 //# sourceMappingURL=xhr-headers.js.map

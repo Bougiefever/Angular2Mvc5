@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import "rxjs/Rx";
 import { LessonsList } from './lessons-list.component';
-import { Http } from '@angular/http';
 
 import { lessonsData } from './lessons';
+import { LessonsService } from './lessons.service';
 
 @Component({
     moduleId: module.id,
@@ -15,5 +15,5 @@ export class AppComponent {
 
     lessons = lessonsData;
 
-    constructor(private http: Http) {}
+    constructor(private lessonsService: LessonsService) {}
 }
