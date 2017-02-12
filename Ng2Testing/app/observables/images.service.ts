@@ -1,17 +1,17 @@
 import { Injectable } from "@angular/core";
-import { lessonsData } from "./images";
+import { imagesData } from "./images";
 
 @Injectable()
-export class LessonsService {
+export class ImagesService {
 
     lessons = [];
-    
+
     constructor() {
         this.loadLessons();
     }
-        
+
     loadLessons() {
-        this.lessons = lessonsData;
+        this.lessons = imagesData;
     }
-    
+
 }

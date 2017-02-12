@@ -22,7 +22,7 @@ __decorate([
 LessonsList = __decorate([
     core_1.Component({
         selector: 'lessons-list',
-        template: "\n            <table class=\"lessons-list card card-strong\">\n                <tr *ngFor=\"let lesson of lessons\">\n                    <td>\n                        <img class=\"lesson-logo\" \n                        src=\"https://material.angularjs.org/latest/img/icons/angular-logo.svg\">  \n                    </td>\n                    <td>\n                        {{lesson.description}}    \n                    </td>\n                    <td>\n                        <button (click)=\"lessonsService.delete(lesson.id)\">Delete</button>\n                    </td>\n                </tr>\n           </table>\n\n        "
+        template: "\n            <table class=\"lessons-list card card-strong\">\n                <tr *ngFor=\"let lesson of lessons\">\n                    <td>\n                        <img class=\"lesson-logo\" \n                        src=\"https://material.angularjs.org/latest/img/icons/angular-logo.svg\">  \n                    </td>\n                    <td>{{lesson.id}}</td>\n                    <td>\n                        {{lesson.caption}}    \n                    </td>\n                    <td>\n                        <button (click)=\"lessonsService.delete(lesson.id)\">Delete</button>\n                    </td>\n                </tr>\n           </table>\n\n        "
     })
 ], LessonsList);
 exports.LessonsList = LessonsList;

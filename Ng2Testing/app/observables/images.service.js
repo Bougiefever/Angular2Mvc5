@@ -10,20 +10,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var images_1 = require("./images");
-var LessonsService = (function () {
-    function LessonsService() {
+var ImagesService = (function () {
+    function ImagesService() {
         this.lessons = [];
         this.loadLessons();
     }
-    LessonsService.prototype.loadLessons = function () {
-        this.lessons = images_1.lessonsData;
+    ImagesService.prototype.loadLessons = function () {
+        this.lessons = images_1.imagesData;
     };
-    return LessonsService;
+    return ImagesService;
 }());
-LessonsService = __decorate([
+ImagesService = __decorate([
     core_1.Injectable(),
     __metadata("design:paramtypes", [])
-], LessonsService);
-exports.LessonsService = LessonsService;
+], ImagesService);
+exports.ImagesService = ImagesService;
 
 //# sourceMappingURL=images.service.js.map

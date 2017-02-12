@@ -10,13 +10,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 require("rxjs/Rx");
-var lessons_1 = require("./lessons");
-var lessons_service_1 = require("./lessons.service");
+var images_1 = require("./images");
+var images_service_1 = require("./images.service");
 var AppComponent = (function () {
-    function AppComponent(lessonsService) {
-        this.lessonsService = lessonsService;
+    function AppComponent(imagesService) {
+        this.imagesService = imagesService;
         this.name = 'Observables';
-        this.lessons = lessons_1.lessonsData;
+        this.images = images_1.imagesData;
     }
     return AppComponent;
 }());
@@ -26,7 +26,7 @@ AppComponent = __decorate([
         selector: 'my-app',
         templateUrl: 'app.component.html',
     }),
-    __metadata("design:paramtypes", [lessons_service_1.LessonsService])
+    __metadata("design:paramtypes", [images_service_1.ImagesService])
 ], AppComponent);
 exports.AppComponent = AppComponent;
 

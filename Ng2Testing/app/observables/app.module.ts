@@ -5,13 +5,13 @@ import { HttpModule} from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { LessonsList } from './images-list.component';
-import { LessonsService } from './lessons.service';
+import { ImagesService } from './images.service';
 
 
 @NgModule({
     imports: [BrowserModule, FormsModule, HttpModule],
     declarations: [AppComponent, LessonsList],
     bootstrap: [AppComponent],
-    providers: [LessonsService]
+    providers: [ImagesService]
 })
 export class AppModule { }

@@ -12,8 +12,9 @@ import {Component, Input} from "@angular/core";
                         <img class="lesson-logo" 
                         src="https://material.angularjs.org/latest/img/icons/angular-logo.svg">  
                     </td>
+                    <td>{{lesson.id}}</td>
                     <td>
-                        {{lesson.description}}    
+                        {{lesson.caption}}    
                     </td>
                     <td>
                         <button (click)="lessonsService.delete(lesson.id)">Delete</button>
@@ -24,14 +25,6 @@ import {Component, Input} from "@angular/core";
         `
 })
 export class LessonsList {
-
-
     @Input()
     lessons = [];
-    
-
-    
-    
-    
-
 }

@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import "rxjs/Rx";
 import { LessonsList } from './images-list.component';
 
-import { lessonsData } from "./images";
-import { LessonsService } from './lessons.service';
+import { imagesData } from "./images";
+import { ImagesService } from './images.service';
 
 @Component({
     moduleId: module.id,
@@ -13,7 +13,7 @@ import { LessonsService } from './lessons.service';
 export class AppComponent {
     name = 'Observables';
 
-    lessons = lessonsData;
+    images = imagesData;
 
-    constructor(private lessonsService: LessonsService) {}
+    constructor(private imagesService: ImagesService) {}
 }
