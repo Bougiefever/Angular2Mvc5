@@ -130,8 +130,24 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\app.component.html" />
+    <Content Include="app\color-picker\app.component.html" />
+    <Content Include="app\color-picker\color-picker.component.css" />
+    <Content Include="app\color-picker\color-picker.component.html" />
+    <Content Include="app\color-picker\color-previewer.component.css" />
+    <Content Include="app\color-picker\color-previewer.component.html" />
+    <Content Include="app\color-sample\app.component.html" />
+    <Content Include="app\color-sample\color-sample.css" />
+    <Content Include="app\color-sample\color-sample.html" />
+    <Content Include="app\directives1\app.component.html" />
+    <Content Include="app\directives2\app.component.html" />
+    <Content Include="app\directives2\heroes.html" />
+    <Content Include="app\directives2\lesson.css" />
+    <Content Include="app\services-intro\app.component.html" />
+    <Content Include="Content\directives-intro.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\common.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -168,6 +184,7 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="typings.json" />
+    <Content Include="typings\globals\core-js\typings.json" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -184,7 +201,29 @@
   <ItemGroup>
     <TypeScriptCompile Include="app\app.component.ts" />
     <TypeScriptCompile Include="app\app.module.ts" />
+    <TypeScriptCompile Include="app\color-picker\app.component.ts" />
+    <TypeScriptCompile Include="app\color-picker\app.module.ts" />
+    <TypeScriptCompile Include="app\color-picker\color-picker.component.ts" />
+    <TypeScriptCompile Include="app\color-picker\color-previewer.component.ts" />
+    <TypeScriptCompile Include="app\color-sample\app.component.ts" />
+    <TypeScriptCompile Include="app\color-sample\app.module.ts" />
+    <TypeScriptCompile Include="app\color-sample\color-sample.ts" />
+    <TypeScriptCompile Include="app\directives1\app.component.ts" />
+    <TypeScriptCompile Include="app\directives1\app.module.ts" />
+    <TypeScriptCompile Include="app\directives1\collapse-on-click.directive.ts" />
+    <TypeScriptCompile Include="app\directives2\app.component.ts" />
+    <TypeScriptCompile Include="app\directives2\app.module.ts" />
+    <TypeScriptCompile Include="app\directives2\hero.ts" />
+    <TypeScriptCompile Include="app\directives2\heroes.ts" />
     <TypeScriptCompile Include="app\main.ts" />
+    <TypeScriptCompile Include="app\services-intro\app.component.ts" />
+    <TypeScriptCompile Include="app\services-intro\app.module.ts" />
+    <TypeScriptCompile Include="app\services-intro\lessons-list.component.ts" />
+    <TypeScriptCompile Include="app\services-intro\lessons.service.ts" />
+    <TypeScriptCompile Include="app\services-intro\lessons.ts" />
+    <TypeScriptCompile Include="app\services-intro\xhr-headers.ts" />
+    <TypeScriptCompile Include="typings\globals\core-js\index.d.ts" />
+    <TypeScriptCompile Include="typings\index.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

@@ -1,0 +1,1 @@
+{"version":3,"file":"xhr-headers.js","sourceRoot":"","sources":["xhr-headers.ts"],"names":[],"mappings":";AACA,sCAAsC;AAEtC;IACI,IAAM,OAAO,GAAG,IAAI,cAAO,EAAE,CAAC;IAC9B,OAAO,CAAC,MAAM,CAAC,cAAc,EAAE,iCAAiC,CAAC,CAAC;IAClE,OAAO,CAAC,MAAM,CAAC,kBAAkB,EAAC,gBAAgB,CAAC,CAAC;IACpD,MAAM,CAAC,EAAC,OAAO,SAAA,EAAC,CAAC;AACrB,CAAC;AALD,gCAKC"}

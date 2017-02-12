@@ -4,7 +4,9 @@ import { Component } from '@angular/core';
     moduleId: module.id,
     selector: 'my-app',
     templateUrl: 'app.component.html',
+    styleUrls: ['lesson.css']
 })
 export class AppComponent {
-    name = 'Zones';
+    name = 'ngFor';
+
 }

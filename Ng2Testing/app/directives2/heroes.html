@@ -1,0 +1,14 @@
+﻿<table>
+    <thead>
+    <th>Name</th>
+    <th>Index</th>
+    </thead>
+    <tbody>
+    <tr *ngFor="let hero of heroes; let i = index" [ngClass]="classes(hero)">
+        <td>{{hero.name}}</td>
+        <td>{{i}}</td>
+    </tr>
+    </tbody>
+</table>
+<!--[class.marvel]="hero.marvel"
+    [ngClass]="{marvel:hero.marvel}-->

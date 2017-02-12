@@ -1,0 +1,7 @@
+﻿<h1>Hello {{name}}</h1>
+
+<color-picker #picker colorpick="red" (ocolor)="previewer.previewcolor = $event"></color-picker>
+<color-previewer #previewer ></color-previewer>
+
+<button (click)="picker.reset()" >Reset</button>
+<!--[previewcolor]="mycolor"-->

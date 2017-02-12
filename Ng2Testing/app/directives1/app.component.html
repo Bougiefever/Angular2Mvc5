@@ -1,0 +1,11 @@
+﻿<h1>Hello {{name}}</h1>
+<div collapse-on-click [collapsed]="collapsed" (collapsed)="onToggle($event)" #cp="collapsible" 
+     class="card card-strong disable-text-selection" [class.collapsed]="cp.collapsed">
+
+    <i class="md-icon collapsible-indicator">arrow_drop_down</i>
+    <i class="md-icon collapsible-indicator">arrow_drop_up</i>
+
+    <div class="collapsible-section">
+        This page section is collapsible, double click it and it will collapse or expand.
+    </div>
+</div>
