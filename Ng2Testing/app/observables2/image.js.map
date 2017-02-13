@@ -1,0 +1,1 @@
+{"version":3,"sources":["observables2/image.ts"],"names":[],"mappings":";AAAA;IAAA;IAIA,CAAC;IAAD,YAAC;AAAD,CAJA,AAIC,IAAA;AAJY,sBAAK","file":"image.js","sourcesContent":["export class Image {\r\n    id: number;\r\n    public url: string;\r\n    public caption: string;\r\n}"]}

@@ -9,29 +9,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var http_1 = require("@angular/http");
-var ImagesService = (function () {
-    function ImagesService(http) {
-        this.http = http;
-        this.images = [];
-        this.loadImages();
+require("rxjs/Rx");
+var init_observable_1 = require("./init-observable");
+var images_service_1 = require("./images.service");
+var AppComponent = (function () {
+    function AppComponent(imagesService) {
+        this.imagesService = imagesService;
+        this.name = 'Observables';
+        this.images$ = imagesService.loadImages();
+        init_observable_1.initObservable();
     }
-    ImagesService.prototype.loadImages = function () {
-        return this.http.get('http://localhost/MediaApi/api/Images')
-            .map(function (res) { return res.json().data; });
-        //.subscribe(images => {
-        //    this.images = images as Image[];
-        //});
-    };
-    ImagesService.prototype.delete = function (id) {
-        console.log("delete " + id);
-    };
-    return ImagesService;
+    return AppComponent;
 }());
-ImagesService = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [http_1.Http])
-], ImagesService);
-exports.ImagesService = ImagesService;
+AppComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'my-app',
+        templateUrl: 'app.component.html',
+    }),
+    __metadata("design:paramtypes", [images_service_1.ImagesService])
+], AppComponent);
+exports.AppComponent = AppComponent;
 
-//# sourceMappingURL=images.service.js.map
+//# sourceMappingURL=app.component.js.map

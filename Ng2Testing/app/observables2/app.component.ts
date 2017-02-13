@@ -18,17 +18,7 @@ export class AppComponent {
 
     constructor(private imagesService: ImagesService) {
         this.images$ = imagesService.loadImages();
+        initObservable();
     }
 
-    //images: Image[];
-
-    //constructor(
-    //    private imagesService: ImagesService
-    //) {
-    //    const images$ = imagesService.loadImages();
-
-    //    images$.subscribe(images => this.images = images);
-    //    //initObservable();
-
-    //}
 }

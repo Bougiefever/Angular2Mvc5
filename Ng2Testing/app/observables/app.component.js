@@ -10,13 +10,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 require("rxjs/Rx");
-var images_1 = require("./images");
 var images_service_1 = require("./images.service");
 var AppComponent = (function () {
     function AppComponent(imagesService) {
         this.imagesService = imagesService;
         this.name = 'Observables';
-        this.images = images_1.imagesData;
+        this.images$ = imagesService.loadImages();
     }
     return AppComponent;
 }());

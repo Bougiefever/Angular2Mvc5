@@ -9,21 +9,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var lessons_1 = require("./lessons");
-var LessonsService = (function () {
-    function LessonsService() {
-        this.lessons = [];
-        this.loadLessons();
+var http_1 = require("@angular/http");
+var ImagesService = (function () {
+    function ImagesService(http) {
+        this.http = http;
+        this.images = [];
+        this.loadImages();
     }
-    LessonsService.prototype.loadLessons = function () {
-        this.lessons = lessons_1.lessonsData;
+    ImagesService.prototype.loadImages = function () {
+        return this.http.get('http://localhost/MediaApi/api/Images')
+            .map(function (res) { return res.json().data; });
+        //.subscribe(images => {
+        //    this.images = images as Image[];
+        //});
     };
-    return LessonsService;
+    ImagesService.prototype.delete = function (id) {
+        console.log("delete " + id);
+    };
+    return ImagesService;
 }());
-LessonsService = __decorate([
+ImagesService = __decorate([
     core_1.Injectable(),
-    __metadata("design:paramtypes", [])
-], LessonsService);
-exports.LessonsService = LessonsService;
+    __metadata("design:paramtypes", [http_1.Http])
+], ImagesService);
+exports.ImagesService = ImagesService;
 
-//# sourceMappingURL=lessons.service.js.map
+//# sourceMappingURL=images.service.js.map
